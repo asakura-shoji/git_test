@@ -1,0 +1,44 @@
+汚いところは最初にキレイにしておく。
+
+var util = {
+  addZero: function() {
+
+  }
+}
+
+AddZero = function() {
+
+}
+
+$('.test').addClass
+$('.test').addClass
+//遅い
+
+var test = $('.test')
+test.addClass
+test.addClass
+//はやい
+
+
+var cal = function() {
+
+  var test = $('#test')
+  var calChange = function() {
+    var a = 'a';
+    test.addClass
+  }
+  setEvent = function() {
+    $().on
+  }
+  init = function() {
+    setEvent
+  }
+  init();
+}
+
+
+init = function() {
+  area()
+  cal()
+}
+$(init);

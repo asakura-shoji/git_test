@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css">
+<title>ajax</title>
+<meta name="description" content="ajax">
+<meta name="keywords" content="ajax,非同期通信,api">
+<link rel="stylesheet" href="ajaxtest.css">
+<script src="jquery-1.10.2.min.js"></script>
+<html>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="header">
+        <p class="header__title">Rakuten Books</p>
+      </div>
+      <div class="search">
+        <div class="search__text">
+          <input type="text" id="js-search-word" class="search__text__input" placeholder="検索する">
+        </div>
+        <button id="js-search-button" class="search__btn">検索</button>
+      </div>
+      <div id="js-error-log" class="" style="display:none">
+        <div>検索結果は0件でした。</div>
+        <div>各検索キーワードは半角2文字もしくは全角1文字以上で指定する必要があります。</div>
+        <div>他のキーワードで再度検索して下さい。</div>
+      </div>
+      <ul id="js-item-lists" class="lists"></ul>
+    </div>
+  </div>
+<script type="text/javascript">
+  function rBooksApi(searchWord) {
+    $('.lists__item').remove();
+    $.ajax({
+      url: 'https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522',
+      type: 'get',
+      data: {
+        applicationId: '1019399324990976605',
+        booksGenreId: '001',
+        keyword: searchWord,
+        format: 'json',
+        hits: '20',
+        orFlag: '0'
+      },
+    }).done(function(data) {
+      if (data.hits === 0) {
+        $('#js-error-log').css('display', 'block');
+      }
+      data.Items.forEach(function(items) {
+        var itemList = "<li class='lists__item'>"+
+           "<div class='lists__item__inner'>"+
+             "<a href='"+items.Item.itemUrl+"' class='lists__item__link' target='_blank'>"+
+               "<img src='"+items.Item.mediumImageUrl+"' class='lists__item__img'>"+
+              "<p class='lists__item__detail'>作品名："+items.Item.title+"</p>"+
+               "<p class='lists__item__detail'>作者　："+items.Item.author+"</p>"+
+               "<p class='lists__item__detail'>レビュー数："+items.Item.reviewCount+"</p>"+
+               "<p class='lists__item__detail'>レビュー平均："+items.Item.reviewAverage+"</p>"+
+             "</a>"+
+           "</div>"+
+          "</li>";
+        $('#js-item-lists').prepend(itemList);
+      });
+    }).fail(function() {
+      $('#js-error-log').css('display', 'block');
+    });
+  }
+  
+  function searchButtonClick() {
+    $('#js-search-button').on('click', function() {
+      var $keyword = $('#js-search-word').val();
+      rBooksApi($keyword);
+    })
+    $('#js-search-word').on('keypress', function() {
+      var $keyword = $('#js-search-word').val();
+      if (13 === event.keyCode) {
+        rBooksApi($keyword);
+      }
+    })
+  }
+  
+  function initialize() {
+    searchButtonClick();
+  }
+  initialize();
+</script>
+</body>
+</html>

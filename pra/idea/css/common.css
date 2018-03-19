@@ -1,0 +1,33 @@
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  width: 950px;
+  /* background: #ccc; */
+}
+
+.header {
+  padding: 0 20px;
+}
+
+.header_title {
+  float: left;
+}
+
+.header_nav {
+  float: right;
+  line-height: 90px;
+}
+
+/* カレンダー */
+.picker__button--today {
+  display: none;
+}
+/* カレンダー */

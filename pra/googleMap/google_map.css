@@ -1,0 +1,37 @@
+.wrap {
+  width: 950px;
+  margin: 30px auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.mapBlock_wrap {
+  
+}
+
+.mapBlock_canvas {
+  height: 500px;
+}
+
+.mapBlock_btn_wrap {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mapBlock_create_btn {
+  width: 150px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.mapBlock_delete_btn {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.footer {
+  margin: 20px 0;
+  border: 1px solid #000;
+}

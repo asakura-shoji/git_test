@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css">
+<title>Google Map</title>
+<meta name="description" content="google map">
+<meta name="keywords" content="google map api">
+<link rel="stylesheet" href="google_map.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h2>Google Map<h2>
+  </header>
+  <div class="mapBlock_wrap">
+    <div id="js-map-canvas" class="mapBlock_canvas"></div>
+    <div class="mapBlock_btn_wrap">
+      <button type="button" id="js-map-create-button" class="mapBlock_create_btn">作成</button>
+      <button type="button" id="js-map-delete-button" class="mapBlock_delete_btn">削除</button>
+    </div>
+  </div>
+</div>
+<footer class="footer"></footer>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAHanG2iniivLK7Smygdj-KbhSoiZVhXoI"></script>
+<script>
+var infoWindow = new google.maps.InfoWindow();
+var mapDiv = document.getElementById('js-map-canvas');
+var mapDeleteButton = document.getElementById('js-map-delete-button');
+var mapCreateButton = document.getElementById('js-map-create-button')
+var map = new google.maps.Map( mapDiv, {
+  center: new google.maps.LatLng(35.7100, 139.8107),
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  zoom: 11
+});
+
+var marker = new google.maps.Marker({
+  position: new google.maps.LatLng(35.7100, 139.8107),
+  map: map,
+  title: 'google map'
+});
+
+// map.addListener('click', function() {
+//   new google.maps.Marker({
+//     position: new google.maps.LatLng(35.7119763, 139.7992353),
+//     map: map,
+//     animation: google.maps.Animation.DROP,
+//   });
+// })
+
+map.addListener('click', function(e) {
+  var latlng = e.latLng;
+  var lat = e.latLng.lat().toString();
+  var lng = e.latLng.lng().toString();
+  infoWindow.setContent("Lat:" + lat + "<br />Lng:" + lng);
+  infoWindow.setPosition(latlng);
+  infoWindow.open(map);
+})
+
+function deleteMarker() { 
+  marker.setMap(null); 
+}
+
+function addMarker() {
+  marker.setMap(map); 
+}
+
+mapDeleteButton.addEventListener('click',function(){
+  deleteMarker();
+},false);
+
+mapCreateButton.addEventListener('click',function(){
+  addMarker();
+},false);
+</script>
+</body>
+</html>

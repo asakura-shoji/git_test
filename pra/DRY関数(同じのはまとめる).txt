@@ -1,0 +1,85 @@
+set = function($el, selector) {
+if(!$('#ReservationsForm-individual').prop("checked") && !$('#ReservationsForm-organization').prop("checked")){
+  $el.removeAttr('style');
+}else{
+  if($el.is(':hidden')){
+    $el.show();
+    $(selector).css({
+      'background-color' : '#FF8A3E',
+      'border-color' : '#FFFFFF',
+      'color' : '#FFFFFF'
+    });
+  }
+}
+}
+
+// 東北
+$tohokuTrigger.on('mouseenter',function(){
+  set($tohokuTrigger, 'fafadfa')
+});
+
+
+$kantoTrigger.on('mouseenter',function(){
+  set($kantoTrigger, 'fadfa')
+});
+
+
+$tohokuHoverTrigger.on('mouseenter',function(){
+  while(timerId.length > 0){
+    var timer = timerId.pop();
+    clearTimeout(timer)
+  }
+});
+$tohokuHoverTrigger.on('mouseleave',function(){
+  $tohokuTarget.hide();
+  $('.jsc-style-tohoku').css({
+    'background-color' : '#FFFFFF',
+    'border-color' : '#FF6B00',
+    'color' : '#656565'
+  });
+});
+$tohokuTrigger.on('mouseleave',function(){
+  var timer = setTimeout(function(){
+    $tohokuTarget.hide();
+    $('.jsc-style-tohoku').css({
+      'background-color' : '#FFFFFF',
+      'border-color' : '#FF6B00',
+      'color' : '#656565'
+    });
+  },100);
+  timerId.push(timer);
+});
+$('.area02').on('click',function(){
+  $bgPrefecturesList.show();
+  if($('.area02-list').is(':hidden')){
+    $('.area02-list').show();
+  }
+});
+
+// 関東
+
+$kantoHoverTrigger.on('mouseenter',function(){
+  while(timerId.length > 0){
+    var timer = timerId.pop();
+    clearTimeout(timer)
+  }
+});
+$kantoHoverTrigger.on('mouseleave',function(){
+  $kantoTarget.hide();
+  $('.jsc-style-kanto').css({
+    'background-color' : '#FFFFFF',
+    'border-color' : '#FF6B00',
+    'color' : '#656565'
+  });
+});
+$kantoTrigger.on('mouseleave',function(){
+  var timer = setTimeout(function(){
+    $kantoTarget.hide();
+    $('.jsc-style-kanto').css({
+      'background-color' : '#FFFFFF',
+      'border-color' : '#FF6B00',
+      'color' : '#656565'
+    });
+  },100);
+  timerId.push(timer);
+});
