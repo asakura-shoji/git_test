@@ -1,0 +1,634 @@
+.step_box { text-align: left; width: 620px; border: solid 1px #d7d7d7 }
+.point_box { background-color: #ccc; text-align: left; width: 620px }
+.kakunin_box { text-align: left; width: 620px; border: solid 1px #c00 }
+.kakunin_box0 { text-align: left; width: 620px; border: solid 1px #fff }
+.henkou_box { text-align: left; width: 620px; border: solid 2px #FF8C00 }
+.s14_r { color: #c00; font-size: 87.5% }
+.s18_rb { color: #c00; font-size: 18px; font-weight: bold }
+.y_num { color: #fff; font-size: 24px; font-weight: bold }
+.y_num_txt { color: #fff; font-size: 14px; font-weight: bold }
+.s12_r { color: #c00; font-size: 75% }
+input { padding: 0 }
+.listH { height: 50px }
+.s14_30 { color: #303030; font-size: 87.5% }
+.s12_rb { FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #c00 }
+.s12_b {font-size: 12px }
+table.reg_box { width:225px; padding:0px;}
+table.reg_box div.contents { 	padding:10px 8px;}
+table.reg_box div.contents span.s14_orange { color:#FF7D00; font:size:14px; font-weight:bold;}
+table.reg_box div.contents span.s_orange { color:#FF7D00;}
+table.check_str_position{
+	margin:24px 0px 7px 0px;
+	_margin:7px 0px 7px 0px;
+}
+.s16_r { font-size:100%; color:#c00; font-weight:bold;}
+.s09_66 { color: #666; font-size: 60% }
+div.rentacar_line {
+	width:620px;
+	height:1px;
+	background-color:#D7D7D7;
+}
+div.rentacar_box {
+	width:620px;
+	border-left:1px solid #D7D7D7;
+	border-right:1px solid #D7D7D7;
+}
+td.td_line {
+	border-top:1px solid #D7D7D7;
+	border-left:1px solid #D7D7D7;
+	border-right:1px solid #D7D7D7;
+    border-bottom:1px solid #D7D7D7;
+}
+td.td_line_s12_30 {
+	border-top:1px solid #D7D7D7;
+	border-left:1px solid #D7D7D7;
+	border-right:1px solid #D7D7D7;
+    border-bottom:1px solid #D7D7D7;
+    color: #303030;
+    font-size: 75%;
+    line-height: 1.3em;
+}
+
+
+
+/* 1001 ワンショット会員化導線対応 ここから */
+div.member_registration{
+	margin:20px 0px 30px 0px;
+	padding: 8px 0px;
+	width: 620px;
+	background: url(/images/yoyaku/bod_member_registration_bg.gif) repeat left top;
+}
+
+div.member_registration table.box{
+	margin: 0px 8px;
+	padding: 0px;
+	border: #cc2222 solid 2px;
+	background-color: #ffffff;
+}
+
+div.member_registration table.box tr td p.caption{
+	margin: 10px 0px 15px 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+div.member_registration table.box tr td p.text{
+	margin: 0px 60px 10px 60px;
+	padding: 0px;
+	font-size: 75%;
+	line-height: 1.2;
+}
+
+div.member_registration table.box tr td ul.merit{
+	margin: 0px 60px;
+	padding: 0px;
+}
+
+div.member_registration table.box tr td ul.merit li{
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+	list-style-type: none;
+	_font-size: 1px;
+	_line-height: 0;
+}
+
+div.member_registration table.box tr td ul.merit li table{
+	margin: 0px;
+	padding: 0px;
+	width: 480px;
+}
+
+div.member_registration table.box tr td ul.merit li table tr th{
+	margin: 0px;
+	padding: 0px;
+	font-size: 19px;
+	font-weight: normal;
+	line-height: 1.1;
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
+}
+
+div.member_registration table.box tr td ul.merit li.merit_01 table tr th{
+	background: url(/images/yoyaku/bod_member_registration_txt_01_bg.gif) no-repeat right top;
+}
+
+div.member_registration table.box tr td ul.merit li table tr th span{
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 1.1;
+	color: #341a00;
+}
+
+div.member_registration table.box tr td ul.merit li table tr th img{
+	vertical-align: top;
+}
+
+div.member_registration table.box tr td ul.merit li table tr td{
+	margin: 0px;
+	padding: 4px 0px 0px 10px;
+	float: left;
+	vertical-align: top;
+	font-size: 70%;
+	text-align: left;
+	line-height: 1.2;
+	color: #666666;
+}
+
+div.member_registration table.box tr td p.button{
+	margin: 0px;
+	padding: 10px 0px;
+	text-align: center;
+	clear: left;
+}
+
+div.member_registration table.box tr td ul.notice{
+	margin: 0px 20px 10px 20px;
+	padding: 0px;
+}
+
+div.member_registration table.box tr td ul.notice li{
+	padding: 0px 0px 0px 1em;
+	text-indent: -1em;
+	list-style-type: none;
+	font-size: 65%;
+	line-height: 1.4;
+	color: #666666;
+}
+
+div.paymentsheet-create-error {
+	width:340px;
+	padding: 5px 0px 10px 0px;
+	text-align: left;
+}
+
+table.rentabus a {
+	color: #333333;
+	cursor: pointer;
+	TEXT-DECORATION: none;
+}
+
+table.rentabus A:link {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+}
+table.rentabus A:visited {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+}
+table.rentabus A:hover {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+}
+
+/* 同伴者に送る_追加 */
+.sPoint {
+	position:relative;
+	width:620px;
+	margin:0 auto;
+}
+.btnComSendArea {
+	position:absolute;
+	top:10px;
+	left:440px;
+	border:3px solid #e5e3e3;
+	padding:10px;
+	width:154px;
+}
+.btnComSendArea p{
+	text-align:center;
+	margin:0;
+	width:154px;
+}
+.btnComSendList {
+	padding:0;
+	margin:12px 0 0;
+	width:154px;
+}
+.btnComSendList li {
+	float:left;
+	list-style-type: none;
+}
+.btnComSendList li img {
+	display:block;
+}
+.btnFb {
+	width:52px;
+	margin-left:2px;
+}
+.btnMail {
+	width:98px;
+}
+img {
+	border:0;
+}
+
+/* JJP導線_追加 */
+#jjpBoxA {
+	width:620px;
+	margin:0px 0px 10px 0px;
+	text-align:left;
+}
+
+#jjpBoxA .corner_t {
+	height:10px;
+}
+#jjpBoxA .corner_m {
+	background:url(/images/yoyaku/corner_m.png) repeat-y;
+	padding:0px 10px 0px 10px;
+	margin:0px 0px -10px 0px;
+}
+#jjpBoxA .corner_b {
+	height:10px;
+}
+
+#jjpBoxA h3 {
+	border-bottom:1px solid #cccccc;
+	padding:0px 0px 5px 0px;
+	margin:0px;
+}
+#jjpBoxA table {
+	border-collapse: collapse;
+	margin:-1px 0px -1px 0px;
+	padding:0;
+}
+#jjpBoxA th {
+	border-top:1px dotted #cccccc;
+	color:#666666;
+	font-size:12px;
+	font-weight:normal;
+	line-height:32px;
+	width:50px;
+	text-align:left;
+	vertical-align:baseline;
+}
+#jjpBoxA th,#jjpBoxA td {
+	padding:0;
+	margin:0;
+}
+#jjpBoxA th .scheCnt {
+	font-size:18px;
+}
+#jjpBoxA td.jjpDate {
+	border-top:1px dotted #cccccc;
+	margin:0px;
+	color:#666666;
+	font-size:12px;
+	line-height:32px;
+	width:125px;
+	vertical-align:baseline;
+}
+#jjpBoxA td.jjpContents {
+	border-top:1px dotted #cccccc;
+	margin:0px;
+	width:425px;
+	color:#303030;
+	font-size:14px;
+	vertical-align:text-top;
+}
+#jjpBoxA td.jjpContents .jjpAirplane {
+	border-bottom:1px dotted #cccccc;
+	padding:10px 0px 10px 0px;
+	margin:0px;
+}
+#jjpBoxA td.jjpContents .jjpAirplane a {
+	display:inline-block;
+	background:url(/images/yoyaku/yoyaku_jjp_airplane.png) no-repeat;
+	padding:0 0 0 70px;
+	color:#1b47ff;
+	text-decoration:underline;
+	font-size:13px;
+	line-height:28px;
+	width:130px;
+}
+html*#jjpBoxA td.jjpContents .jjpAirplane a {
+	width:200px;
+}
+#jjpBoxA td.jjpContents .jjpAirplane a:hover {
+	color: #ff7d00;
+	text-decoration: none;
+}
+#jjpBoxA td.jjpContents .jjpAirplane .jjpCaution {
+	font-size: 12px;
+	padding: 8px 8px 8px 35px;
+}
+#jjpBoxA td.jjpContents .jjpHotel {
+	background:url(/images/yoyaku/icon_hotel.gif) no-repeat;
+	background-position: left;
+	padding:0 0 0 27px;
+	margin:0px;
+	line-height:34px;
+}
+#jjpBoxA td.jjpContents p:first-child {
+	border-top:none;
+}
+#jjpBoxA td.jjpContents:first-child {
+	border-top:none;
+}
+#jjpBoxA td.jjpDate:first-child {
+	border-top:none;
+}
+
+
+#jjpBoxB {
+	border:1px solid #ff7d00;
+	width:540px;
+	padding:6px 0px;
+	margin:0px auto;
+	text-align:center;
+}
+
+#jjpBoxB p {
+	color: #fe5900;
+	font-size:14px;
+	font-weight:bold;
+	margin:0px;
+	text-align:center;
+}
+
+#jjpBoxB a  {
+	background:url(/images/yoyaku/yoyaku_bullet.png) no-repeat;
+	background-position:15px 3px;
+	padding-left:27px;
+	color:#1b47ff;
+	font-size:14px;
+	font-weight:normal;
+	text-decoration:underline;
+}
+#jjpBoxB a:hover {
+	color: #ff7d00;
+	text-decoration: none;
+}
+
+#jjpBoxC {
+	width:540px;
+	padding:2px 0px;
+	text-align:right;
+	font-size:11px;
+}
+/* clear */
+.clearfix:after {
+	clear:both;
+	content:".";
+	display:block;
+	font-size:0.1em;
+	height:0.1px;
+	line-height:0;
+	visibility:hidden;
+}
+.clearfix {
+	min-height:1px;
+zoom:1;
+}
+* html .clearfix {
+	height:1px;
+}
+.clear {
+	clear:both;
+}
+
+/* ボタン変更20150831 */
+.reserveDetails-btnArea {
+	overflow: hidden;
+}
+.reserveDetails-btnList {
+	float: right;
+	margin: 10px 0;
+	padding: 0;
+}
+.reserveDetails-btnList li {
+	float: left;
+	margin-left: 10px;
+}
+.reserveDetails-btnList li a{
+	display: block;
+	text-indent: -9999px;
+}
+.reserveDetails-btnList li:first-child {
+	margin-left: 0;
+}
+.btnReserveChange a {
+	width: 114px;
+	height: 34px;
+	background: url(/images/yoyaku/btn_reserve_change.png) no-repeat 0 0;
+}
+.btnReserveCancel a {
+	width: 114px;
+	height: 34px;
+	background: url(/images/yoyaku/btn_reserve_cancel.png) no-repeat 0 0;
+}
+.btnReserveChange a:hover,
+.btnReserveCancel a:hover {
+	background-position: 0 -34px;
+}
+.btnYadoComSendArea {
+	top: 102px !important;
+}
+.btnReserveCloseArea {
+	width: 620px;
+}
+.btnReserveClose {
+	display: block;
+	width: 140px;
+	height: 34px;
+	margin: 10px auto;
+	background: url(/images/yoyaku/btn_reserve_close.png) no-repeat 0 0;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+.btnReserveClose:hover {
+	background-position: 0 -34px;
+}
+.mB30 {
+	margin-bottom: 30px;
+}
+ol, ul {
+    list-style: outside none none;
+}
+
+/*-------------Applepay pc 201706
+-------------------------------*/
+.js-dispSwitch {
+	display: none;
+}
+.is-active {
+	display: block;
+}
+
+/*「フロー」*/
+
+.applePayBody td { text-align: left;}
+
+.mailNotice {
+  margin-top: 10px;
+}
+
+.reserveFlowNaviApple_wrap td {
+	height: 18px;
+}
+
+.reserveFlowNaviApple {
+	width: 19.3%;
+}
+.reserveFlowApple {
+	font-size: 10px;
+  background: #d7d7d7;
+  text-align: center;
+  border-radius: 10px;
+  color: #6e6e6e;
+  font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	height: 18px;
+	line-height: 18px
+}
+.current {
+	background-color: #FF7D00;
+	color: #FFFFFF;
+}
+.pay {
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.pay.js-dispSwitch {
+	display: block;
+}
+.pay.is-active {
+	border: 2px solid #FF6600;
+}
+.pay input[type="text"]:disabled {
+	background-color: #D7D7d7 !important;
+}
+.privacy {
+	margin:40px 0 10px 0;
+}
+.memberRegistrationMain {
+	border: 2px solid #D7D7D7;
+	border-radius: 10px;
+}
+.memberRegistrationTitle {
+	background: #D7D7D7;
+	font-weight: bold;
+	padding: 5px;
+}
+.contents {
+	padding: 0 10px 10px;
+}
+.reduction {
+	font-size: 75%;
+	color: #FF7D00;
+	font-weight: bold;
+}
+.s14_orange {
+	color:#FF7D00;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.btn_do_next {
+	background: url(/images/yoyaku/next02.gif) no-repeat 0 0;
+	display: block;
+	margin: 0 auto;
+	height: 34px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 156px;
+}
+.btn_do_next:hover {
+	background: url(/images/yoyaku/next02on.gif) no-repeat 0 0;
+}
+.btn_change_payment {
+	background: url(/images/yoyaku/input_change_off.gif) no-repeat 0 0;
+	display: block;
+	margin: 0 auto;
+	height: 34px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 156px;
+}
+.btn_change_payment:hover {
+	background: url(/images/yoyaku/input_change_on.gif) no-repeat 0 0;
+}
+.btn_change_input {
+	background: url(/images/yoyaku/change_off.png) no-repeat 0 0;
+	display: block;
+	margin: 0 auto;
+	height: 34px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 156px;
+}
+.btn_change_input:hover {
+	background: url(/images/yoyaku/change_on.png) no-repeat 0 0;
+}
+
+/*font-weight*/
+.b {	font-weight: bold; }
+/*color*/
+.s_orange { color:#FF7D00; }
+.s_red { color: #ff0000; }
+.s_gray { color:#666666; }
+.s_black { color:#303030; }
+.s_brown { color: #930; }
+.s_white { color:#ffffff; }
+.s_yellow { color:#ffff00; }
+/*background-color*/
+.bc_blue { background-color: #0066CC; }
+/*font-size*/
+.ft11 { font-size: 11px; }
+.ft12 { font-size: 12px; }
+.ft13 { font-size: 13px; }
+.ft18 { font-size: 18px; }
+.ft75 { font-size: 75%; }
+.ft90 { font-size: 90%; }
+.ft100 { font-size: 100%; }
+/*margin*/
+.m0 { margin: 0; }
+.mT3	{ margin-top: 3px; }
+.mT5	{ margin-top: 10px; }
+.mT15 { margin-top: 15px; }
+.mT20 { margin-top: 20px; }
+.mT40 { margin-top: 40px; }
+.mB10 { margin-bottom: 10px; }
+.mT15_B10 { margin: 15px 0pt 10px; }
+.mTL_20 { margin: 20px 0 0 20px; }
+.mTRL8_B6 { margin:8px 8px 6px; }
+/*padding*/
+.pT2	{ padding-top: 2px; }
+.pT3	{ padding-top: 3px; }
+.pT5	{ padding-top: 5px; }
+.pT10	{ padding-top: 10px; }
+.pL10	{ padding-left: 10px; }
+.pL20 { padding-left: 20px; }
+.p8 { padding: 8px; }
+.pTB2_RL8 { padding:2px 8px; }
+.pRBL8 { padding:0 8px 8px 8px; }
+/*text-align*/
+.taC {
+	text-align: center;
+	margin-top: 10px;
+}
+.taR { text-align: right; }
+.taL {
+	width: 620px;
+	text-align: left;
+}
+/*text-decoration*/
+.tdU { text-decoration: underline; }
+/*width*/
+.w620 { width: 620px; }
+/*line-height*/
+.lh0.1 { line-height:0.1; }
+
+.helpBtn{
+	text-align: right !important;
+	color: #666;
+	font-size: 70%;
+	line-height: 1.1em;
+}
